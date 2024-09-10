@@ -1,0 +1,38 @@
+.about {
+    padding-block: 220px;
+
+    @include tablet {
+        padding-block: 110px;
+    }
+
+    @include mobile {
+        padding-block: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 50px;
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    &__title {
+        color: var(--color-dark-alt);
+    }
+
+    &__image {
+        border: 9px solid transparent;
+        background: var(--linear-gradient-to-top) border-box;
+        border-radius: 50%;
+
+        @include mobile {
+            width: 300px;
+            height: auto;
+        }
+    }
+}

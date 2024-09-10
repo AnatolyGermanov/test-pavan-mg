@@ -1,0 +1,24 @@
+.soc1als {
+    --hover-color: var(--color-dark-alt);
+
+    &__list {
+        display: flex;
+        column-gap: 20px;
+
+        @include mobile {
+            column-gap: 10px;
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__link {
+        display: inline-flex;
+
+        @include hover {
+            color: var(--hover-color);
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.footer {
+    color: var(--color-dark-alt);
+
+    &__inner {
+        padding-block: var(--section-padding-y) 60px;
+
+        @include tablet {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px 100px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 2px solid var(--color-gray);
+
+        @include tablet {
+            column-gap: 50px;
+        }
+
+        @include mobile {
+            column-gap: 25px;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__contacts {
+        margin-left: auto;
+        font-family: var(--font-family-alt);
+
+        &-body {
+            display: flex;
+            column-gap: 50px;
+            font-style: normal;
+
+            @include tablet {
+                column-gap: 25px;
+            }
+
+            @include mobile-s {
+                column-gap: 20px;
+            }
+
+            a {
+                text-decoration: underline transparent;
+                text-underline-position: under;
+
+                @include hover {
+                    text-decoration-color: inherit;
+                }
+            }
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+
+        @media (max-width: 588px) {
+            order: 1;
+        }
+    }
+
+    &__soc1als {
+        --hover-color: var(--color-gray);
+    }
+
+    &__extra {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px 100px;
+
+        @include desktop {
+            column-gap: 50px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &__menu {
+        font-family: var(--font-family-alt);
+
+        &-list {
+            display: flex;
+            column-gap: 50px;
+
+            @include desktop {
+                column-gap: 25px;
+            }
+
+            @include mobile {
+                column-gap: 10px;
+            }
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            text-decoration: underline transparent;
+            text-underline-position: under;
+
+            @include hover {
+                text-decoration-color: inherit;
+            }
+        }
+    }
+
+    &__author {
+        color: var(--color-gray);
+    }
+}

@@ -1,0 +1,24 @@
+.tech-stack {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        place-items: center;
+        gap: 50px 100px;
+
+        @include tablet {
+            gap: 25px 50px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include mobile-s {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__image {
+        height: auto;
+    }
+}

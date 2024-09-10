@@ -1,0 +1,56 @@
+.header {
+    padding-top: 40px;
+
+    @include mobile {
+        padding-top: 20px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px 50px;
+
+        @include tablet {
+            column-gap: 30px;
+        }
+    }
+
+    &__menu {
+        margin-left: auto;
+
+        &-list {
+            display: flex;
+            column-gap: 50px;
+
+            @include tablet {
+                column-gap: 20px;
+            }
+
+            @include mobile {
+                column-gap: 10px;
+            }
+        }
+
+        &-link {
+            @include fluid-text(20, 16);
+            
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            font-family: var(--font-family-alt);
+            font-weight: 500;
+            text-decoration: underline transparent;
+            text-underline-position: under;
+
+            @include hover {
+                text-decoration-color: inherit;
+            }
+        }
+
+        @media (max-width: 652px) {
+            order: 1;
+        }
+    }
+}
