@@ -7,5 +7,5 @@
 - CSS
 - SCSS
 
-## ССылка на демо
+## Ссылка на сайт
 https://anatolygermanov.github.io/test-pavan-mg/
